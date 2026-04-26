@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+.markmap-dark {
+  background: #27272a;
+  color: white;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/style.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets@11.11.1/styles/default.min.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.12/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/index.js"></script><script>((r) => {
+          setTimeout(r);
+        })(() => {
+  const { markmap, mm } = window;
+  const toolbar = new markmap.Toolbar();
+  toolbar.attach(mm);
+  const el = toolbar.render();
+  el.setAttribute("style", "position:absolute;bottom:20px;right:20px");
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+              if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+                document.documentElement.classList.add("markmap-dark");
+              }
+            })(() => window.markmap,null,{"content":"LEI 12.030/2009 &#x2014; LEGISLACAO PERICIAL FEDERAL","children":[{"content":"Estrutura de prioridades","children":[{"content":"<pre data-lines=\"11,138\"><code class=\"language-mermaid\">mindmap\n  root((LEI 12.030/2009\nLegislacao\nPericial\nFederal))\n\n    A_BASES[BASES DA PERICIA OFICIAL\nPrioridade A]\n      A1[Definicao\nArt. 1]\n        A1a[Servico publico federal]\n        A1b[Orgaos de seguranca publica]\n        A1c[&#x1f3af; Banca cobra: perito e servidor de carreira especifica &#x2014; nao terceirizado]\n      A2[Perito Criminal\nArt. 1 par. 1]\n        A2a[Servidor publico de carreira]\n        A2b[Ingresso exclusivo por concurso publico]\n        A2c[Habilitacao tecnica na area de atuacao]\n\n    A_AUTONOMIA[AUTONOMIA TECNICA\nArt. 2 &#x2014; APOSTA MAXIMA\nPrioridade A]\n      B1[Principio central]\n        B1a[Perito e autoridade nas conclusoes do laudo]\n        B1b[Nao subordinado a autoridade policial ou judicial]\n        B1c[Quanto ao merito tecnico-cientifico]\n        B1d[&#x1f3af; Banca cobra: DELEGADO NAO pode determinar conteudo ou conclusao do laudo]\n      B2[Limites da autonomia]\n        B2a[Delegado &#x2014; pode requisitar exames, NAO ditar conclusoes]\n        B2b[Juiz &#x2014; pode requisitar novos exames, NAO alterar laudos existentes]\n        B2c[MP &#x2014; pode solicitar quesitos suplementares]\n        B2d[&#x1f3af; Banca cobra: Art. 182 CPP &#x2014; juiz nao esta adstrito ao laudo, mas pode apenas ignorar, nao alterar]\n      B3[Macetes]\n        B3a[PEDIR novo exame = permitido a qualquer autoridade]\n        B3b[ALTERAR laudo existente = vedado a qualquer autoridade]\n        B3c[CONCLUSAO do laudo = exclusiva do perito]\n\n    A_LAUDOS[LAUDOS PERICIAIS\nArts. 6-9\nPrioridade A]\n      C1[Natureza juridica]\n        C1a[Documento publico oficial]\n        C1b[Prova pericial &#x2014; meio de prova no CPP]\n        C1c[Assinado por perito oficial habilitado]\n      C2[Estrutura obrigatoria]\n        C2a[Preambulo]\n        C2b[Historico]\n        C2c[Objeto do exame]\n        C2d[Metodologia]\n        C2e[Resultado]\n        C2f[Conclusao]\n        C2g[&#x1f3af; Banca cobra: 6 elementos &#x2014; PHOMRC &#x2014; nao confundir com relatorio policial]\n      C3[Prazo &#x2014; APOSTA ALTA]\n        C3a[Art. 160 CPP &#x2014; prazo de 10 dias]\n        C3b[Prorrogavel pela autoridade competente]\n        C3c[Fixado pela autoridade requisitante]\n        C3d[&#x1f3af; Banca cobra: prazo do LAUDO e 10 dias (CPP), nao da lei 12.030]\n\n    B_CARREIRAS[ESTRUTURA DAS CARREIRAS\nArts. 4-8\nPrioridade B]\n      D1[Perito Criminal Federal]\n        D1a[Analisa vestigios de crimes]\n        D1b[Expedicao de laudos e pareceres]\n      D2[Papiloscopista Policial Federal]\n        D2a[Identificacao humana por papiloscopia]\n        D2b[Banco de dados datiloscopicos]\n      D3[Medico-Legista Federal]\n        D3a[Exames em pessoas vivas e mortas]\n        D3b[Nexo causal &#x2014; lesao e morte]\n      D4[Regra geral de ingresso]\n        D4a[Exclusivamente por concurso publico]\n        D4b[Nivel superior &#x2014; formacao compativel]\n\n    A_LOCAL[ATUACAO EM LOCAIS DE CRIME\nArt. 5\nPrioridade A]\n      E1[Competencia territorial]\n        E1a[Qualquer local com vestigios de infracao penal]\n        E1b[&#x1f3af; Banca cobra: livre acesso ao local preservado]\n      E2[Poderes do perito no local]\n        E2a[Requisitar informacoes de orgaos publicos]\n        E2b[Isolar e preservar o local]\n        E2c[Documentar metodicamente os vestigios]\n      E3[Relacao com CPP]\n        E3a[Art. 169 CPP &#x2014; exame do local do crime]\n        E3b[Local deve ser preservado ate chegada do perito]\n\n    B_PERITOLEIGO[PERITO NAO-OFICIAL (LEIGO)\nArt. 3 par. 2\nPrioridade B]\n      F1[Hipotese de cabimento &#x2014; APOSTA ALTA]\n        F1a[Ausencia de perito oficial na localidade]\n        F1b[Nao e opcao, e excecao]\n      F2[Requisitos]\n        F2a[Duas pessoas idoneas]\n        F2b[Diploma de curso superior]\n        F2c[Compromisso: desempenhar fielmente o encargo]\n      F3[Formalidades]\n        F3a[Laudo assinado por ambos]\n        F3b[&#x1f3af; Banca cobra: DOIS peritos leigos &#x2014; nao um &#x2014; assinam o laudo]\n      F4[Macete]\n        F4a[Regra &#x2014; 1 perito oficial]\n        F4b[Excecao &#x2014; 2 peritos leigos]\n\n    B_RELACAOCPP[RELACAO COM O CPP\nPrioridade B]\n      G1[Tabela de intersecao]\n        G1a[Lei 12.030 &#x2014; autonomia tecnica / CPP Art. 182 &#x2014; juiz nao adstrito]\n        G1b[Lei 12.030 &#x2014; dois peritos / CPP Art. 159 &#x2014; exame por dois peritos]\n        G1c[Lei 12.030 &#x2014; perito leigo / CPP Art. 159 par.1 &#x2014; na falta de oficial]\n        G1d[Lei 12.030 &#x2014; quesitos / CPP Art. 176 &#x2014; formulacao pelas partes]\n        G1e[Lei 12.030 &#x2014; prazo laudo / CPP Art. 160 &#x2014; 10 dias]\n      G2[&#x1f3af; Banca cobra: lei 12.030 organiza a carreira; CPP regula o PROCESSO pericial]\n\n    C_DISTINCAOLEIS[DISTINCAO ENTRE LEIS\nPrioridade C]\n      H1[Lei 12.030/2009]\n        H1a[Pericia oficial &#x2014; carreira, autonomia, estrutura]\n      H2[Lei 12.654/2012]\n        H2a[Identificacao criminal por DNA]\n        H2b[Banco BNAFIM]\n      H3[Lei 9.807/1999]\n        H3a[Protecao de testemunhas e vitimas]\n      H4[&#x1f3af; Banca cobra: nao confundir DNA bancario com autonomia do perito]\n</code></pre>","children":[],"payload":{"tag":"pre","lines":"11,138"}}],"payload":{"tag":"h2","lines":"4,5"}},{"content":"Legenda de prioridade por no","children":[{"content":"<table data-lines=\"143,148\">\n<thead data-lines=\"143,144\">\n<tr data-lines=\"143,144\">\n<th>Prioridade</th>\n<th>Nos do mapa</th>\n<th>Razao</th>\n</tr>\n</thead>\n<tbody data-lines=\"145,148\">\n<tr data-lines=\"145,146\">\n<td>A &#x2014; 60%</td>\n<td>Bases, Autonomia Tecnica (Art. 2), Laudos (Arts. 6-9), Atuacao em Local (Art. 5)</td>\n<td>Mais cobrados em prova; fundamentais para o cargo</td>\n</tr>\n<tr data-lines=\"146,147\">\n<td>B &#x2014; 30%</td>\n<td>Carreiras (Arts. 4-8), Perito Leigo, Relacao com CPP</td>\n<td>Cobrados com frequencia media; contexto necessario</td>\n</tr>\n<tr data-lines=\"147,148\">\n<td>C &#x2014; 10%</td>\n<td>Distincao entre leis correlatas</td>\n<td>Cobrado raramente; so o essencial</td>\n</tr>\n</tbody>\n</table>","children":[],"payload":{"tag":"table","lines":"143,148"}}],"payload":{"tag":"h2","lines":"141,142"}},{"content":"Apostas maximas do Detetive &#x2014; nodes em destaque","children":[{"content":"1. <strong>Autonomia tecnica do perito (Art. 2)</strong> &#x2014; o delegado nao manda no laudo","children":[],"payload":{"tag":"li","lines":"153,154","listIndex":1}},{"content":"2. <strong>Perito oficial x perito leigo</strong> &#x2014; quando se usa e quais os requisitos","children":[],"payload":{"tag":"li","lines":"154,155","listIndex":2}},{"content":"3. <strong>Prazo de 10 dias para o laudo (Art. 160 CPP)</strong> &#x2014; cai com frequencia","children":[],"payload":{"tag":"li","lines":"155,156","listIndex":3}},{"content":"4. <strong>Dois peritos como regra</strong> &#x2014; quando cai a excecao do perito leigo","children":[],"payload":{"tag":"li","lines":"156,158","listIndex":4}}],"payload":{"tag":"h2","lines":"151,152"}}],"payload":{"tag":"h1","lines":"0,1"}},null)</script>
+</body>
+</html>
